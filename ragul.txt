@@ -1,0 +1,86 @@
+string
+input:civic
+output:true
+program
+1.# Check whether the given string is a palindrome
+
+s = input().strip()
+
+if s == s[::-1]:
+    print("true")
+else:
+    print("false")
+
+input:Listen
+      Silent
+output:true
+program
+2.# Read two input strings
+s1 = input().replace(" ", "").lower()
+s2 = input().replace(" ", "").lower()
+
+# Check if they are anagrams
+if sorted(s1) == sorted(s2):
+    print("true")
+else:
+    print("false")
+
+input:Harry Potter
+outout:3
+       8
+program      
+3.s = input()
+
+vowels = 0
+consonants = 0
+
+for ch in s:
+    if ch.isalpha():
+        if ch.lower() in "aeiou":
+            vowels += 1
+        else:
+            consonants += 1
+
+print(vowels)
+print(consonants)
+
+input:Wikipedia is a free online encyclopedia, created and edited by volunteers around the world
+online
+output:true
+program
+4.# Read the string
+text = input()
+
+# Read the word to search
+word = input()
+
+# Check if the word exists in the string
+if word in text:
+    print("true")
+else:
+    print("false")
+
+input:abcdefghabcdefgh
+b
+output:acdefghacdefgh
+program
+5.s = input()
+ch = input()
+
+print(s.replace(ch, ""))
+
+input:A
+output:65
+program
+6.# Take a string as input
+s = input()
+
+# Print the ASCII value of the first character
+print(ord(s))
+
+input:Harry
+output:hARRY
+program
+7.s = input()
+print(s.swapcase())
+
